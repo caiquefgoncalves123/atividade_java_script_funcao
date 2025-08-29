@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 40</title>
+</head>
+<body>
+    <button id="alterar">Alterar Pargrafos</button>
+    <p>Texto 1</p>
+    <p>Texto 2</p>
+    <p>Texto 3</p>
+
+    <script>
+        document.getElementById('alterar').onclick = function () {
+            var paragrafos = document.querySelectorAll('p')
+            paragrafos.forEach(function (p) {
+                p.textContent = 'Texto Alterado'
+                
+            })
+            
+        }
+    </script>
+</body>
+</html>

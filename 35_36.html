@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 35 e 36</title>
+</head>
+<body>
+    <p>Contador: <span id="contador">0</span></p>
+
+    <button onclick="aumentarContador()">Aumentar</button>
+    <button onclick="diminuirContador()">Diminuir</button>
+
+    <script>
+        var contador = 0
+
+        function aumentarContador() {
+            contador++;
+            document.getElementById('contador').innerText = contador
+            
+        }
+
+        function diminuirContador() {
+      contador--;
+      document.getElementById('contador').textContent = contador;
+    }
+    </script>
+</body>
+</html>

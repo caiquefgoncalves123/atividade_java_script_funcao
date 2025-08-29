@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13</title>
+</head>
+<body>
+    
+    <button id="adicionar">Adicionar Item</button>
+    <button id="remover">Remover Último Item</button>
+    <ul id="lista">
+
+    </ul>
+
+    <script>
+        var botao = document.getElementById('adicionar');
+        var botaoRemover = document.getElementById('remover');
+        var lista = document.getElementById('lista');
+
+        
+
+        botao.onclick = function () {
+            var item = document.createElement('li');
+            item.textContent = 'item' + contador;
+            lista.appendChild(item);
+            contador++;
+        }
+
+        botaoRemover.onclick = function () {
+            if (lista.lastChild) {
+                lista.removeChild(lista.lastChild);
+            }
+        }
+    </script>
+
+</body>
+</html>

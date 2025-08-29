@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 38</title>
+</head>
+<body>
+    
+    <input type="number" id="num1" placeholder="Digite um número">
+    <input type="number" id="num2" placeholder="Digite outro número">
+
+    <button onclick="somar()">Somar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function somar() {
+            var numero1 = parseFloat(document.getElementById('num1').value)
+            var numero2 = parseFloat(document.getElementById('num2').value)
+            var resultado = numero1 + numero2
+
+            document.getElementById('resultado').textContent = 'Resultado: ' + resultado
+              
+        }
+    </script>
+
+
+</body>
+</html>
