@@ -1,0 +1,10 @@
+p{
+    background-color: white;
+    transition: background 0.3s;
+    padding: 10px ;
+}
+
+button{
+    font-size: 16px;
+    padding: 10px 20px;
+}
