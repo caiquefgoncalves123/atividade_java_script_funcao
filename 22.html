@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 22</title>
+</head>
+<body>
+    <button id="botaoClique">Clique aqui</button>
+    <p>Cliques <span id="contador">0</span></p>
+
+    <script>
+        var cliques = 0
+        var botao = document.getElementById('botaoClique')
+        var contador = document.getElementById('contador')
+
+        botao.addEventListener('click', function () {
+
+            cliques ++;
+            contador.textContent = cliques;
+            
+        })
+    </script>
+</body>
+</html>

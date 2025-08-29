@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_atv_24.css">
+    <title>Atividade 24</title>
+</head>
+<body>
+    <div id="minhaDiv" onmouseover="mudarCor(true)" onmouseout="mudarCor(false)">Passe o mouse</div>
+
+
+    <script>
+        function mudarCor(ativo) {
+            var div = document.getElementById('minhaDiv')
+            div.style.backgroundColor = ativo ? '#4caf50' : '#2196f3';
+            
+        }
+    </script>
+</body>
+</html>
