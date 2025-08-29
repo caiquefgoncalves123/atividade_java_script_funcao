@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_atv_25.css">
+    <title>Atividade 25 e 26</title>
+</head>
+<body>
+    
+    <input type="text" id="campoTexto" placeholder="Digite Algo">
+
+    <script>
+        var campo = document.getElementById('campoTexto')
+        campo.onfocus = function () {
+            campo.style.backgroundColor = 'yellow';
+        };
+
+        campo.onblur = function (){
+            campo.style.backgroundColor = '';
+        }
+    </script>
+
+
+</body>
+</html>

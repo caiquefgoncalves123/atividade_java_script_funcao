@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29</title>
+</head>
+<body>
+    
+    <img 
+    id="imagem" 
+    src="https://cdn0.peritoanimal.com.br/pt/razas/0/8/3/calopsita_380_0_orig.jpg" 
+    alt="Imagem Normal"
+    style="cursor:pointer;"
+  />
+
+  <script>
+    const imagem = document.getElementById('imagem');
+    imagem.onmouseover = function() {
+      imagem.src = "https://static.wikia.nocookie.net/viloes/images/4/4a/Humpty_Dumpty.webp/revision/latest?cb=20240422163803&path-prefix=pt-br";
+    };
+    imagem.onmouseout = function() {
+      imagem.src = "https://cdn0.peritoanimal.com.br/pt/razas/0/8/3/calopsita_380_0_orig.jpg";
+    };
+  </script>
+
+
+</body>
+</html>
