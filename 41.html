@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_atv_41.css">
+    <title>Atividade 41</title>
+</head>
+<body>
+    <style>
+    #semaforo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #ccc;
+      margin-bottom: 20px;
+      border: 2px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 24px;
+      color: #333;
+      transition: background 0.3s;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="semaforo"></div>
+  <button onclick="mudarCor('red')">Vermelho</button>
+  <button onclick="mudarCor('yellow')">Amarelo</button>
+  <button onclick="mudarCor('green')">Verde</button>
+
+  <script>
+    function mudarCor(cor) {
+      document.getElementById('semaforo').style.background = cor;
+    }
+  </script>
+</body>
+</html>

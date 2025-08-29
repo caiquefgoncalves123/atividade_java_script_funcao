@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 45</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            padding-top: 90px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        #contador {
+            font-size: 2em;
+            color: blue;
+            margin-top: 15px;
+        }
+    </style>
+
+    <button onclick="curtir()">Curtir</button>
+    <div id="contador">0</div>
+
+    <script>
+        var curtidas = 0;
+        function curtir() {
+            curtidas++;
+            document.getElementById('contador').textContent = curtidas;
+            
+        }
+    </script>
+</body>
+</html>

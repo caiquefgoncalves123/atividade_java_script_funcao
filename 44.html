@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 44</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        h2{
+            margin-top: 30px;
+            color: #333;
+        }
+
+        
+    </style>
+
+    <h2 id="hora"></h2>
+    <button onclick="mostrarHora()">Revelar Hora</button>
+
+    <script>
+        function mostrarHora() {
+            var agora = new Date();
+            var horaFormatada = agora.toLocaleTimeString();
+            document.getElementById('hora').textContent = horaFormatada
+            
+        }
+    </script>
+</body>
+</html>
