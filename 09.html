@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 09</title>
+</head>
+<body>
+    <ul>
+        <li id="primeiroItem">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button onclick="alterarPrimeiroItem()">Alterar Primeiro Item da Lista</button>
+
+    <script>
+
+        //Foi criado uma lista, onde apenas o primeiro item da lista possui um id
+        // logo abaixo dele um botão que chamará a função
+        // No java script, uma função foi criada, onde pega o id do elemento da lista e altera ele usando .innerText
+        // e o botão chama essa função//
+        function alterarPrimeiroItem() {
+            var primeiro = document.getElementById("primeiroItem").innerText = "Item alterado"
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 07</title>
+</head>
+<body>
+    <p id="meuParagrafo">Esse é um exemplo de paragrafo</p>
+    <button>Mostrar quantidade de caracteres</button>
+
+    <script>
+        // Este código pega o texto de um parágrafo usando seu id,
+       // calcula a quantidade de caracteres com .length
+       // e exibe essa quantidade em um alerta quando o botão é clicado.
+       function mostrarQuantidade() {
+        var texto = document.getElementById("meuParagrafo").innerText;
+        alert("A quantidade de caracteres do paragrafo é de: " + texto.length)
+        
+       }
+    </script>
+</body>
+</html>

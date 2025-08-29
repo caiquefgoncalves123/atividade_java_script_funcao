@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <!-- Este div possui um ID que será mostrado ao clicar no botão -->
+    <div id="elementoExemplo">Esse é um elemento com ID</div>
+    
+    <!-- Botão que, ao ser clicado, chama a função mostrarId() -->
+    <button onclick="mostrarID()">Mostrar ID do Elemento Acima</button>
+    
+     <!-- Parágrafo onde será exibido o resultado -->
+    <p id="resultado"></p>
+
+
+    
+    
+    <script>
+         // Função que mostra o ID do elemento acima
+       function mostrarID() {
+
+         // Obtém o elemento pelo ID
+        var elemento = document.getElementById("elementoExemplo");
+
+        // Obtém o parágrafo de resultado
+        var resultado = document.getElementById("resultado");
+
+        // Exibe o ID do elemento no parágrafo
+        resultado.textContent = "ID do elemento: " + elemento.id
+        
+       }
+    </script>
+
+
+</body>
+</html>

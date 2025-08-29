@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+</head>
+<body>
+    
+    <input type="text" id="meuInput" placeholder="Digite algo">
+    <button onclick="mostrarValor()">Mostrar Valor</button>
+    <p id="resultado"></p>
+
+
+
+        <script>
+
+            //Foi criado um input para permitir o usuário poder digitar algo
+            // e um paragrafo foi criado um id para poder mostrar o valor que o usuario digitou
+            // no Java Script, uma função foi criada para poder pegar o valor o input 
+            // e colcoacar no paragrafo em forma de .innerText//
+         function mostrarValor() {
+            var valor = document.getElementById("meuInput").value;
+            document.getElementById("resultado").innerText = valor;
+            
+         }
+        </script>
+</body>
+</html>

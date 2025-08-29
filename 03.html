@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 03</title>
+</head>
+<body>
+    <p id="meuParagrafo">Texto Original</p>
+    <button onclick="trocarTexto()">Trocar Texto</button>
+
+    <script>
+
+        //Foi criado um paragrafo com um id e logo abaixo dele um botão que vai servir para chamar a função
+        // No Java Script, a função vai pegar o paragrafo e trocar o texto dele para "Olá Mundo"
+        // e no botão via chamar essa função quando ele for clciado//
+        function trocarTexto() {
+            document.getElementById("meuParagrafo").innerText = "Olá Mundo"
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 08</title>
+</head>
+<body>
+    <p id="dataHora"></p>
+    <button onclick="mostrarDataHora()">Mostrar data e hora</button>
+
+
+    <script>
+        // Ao clicar no botão, esta função pega a data e hora atuais
+        // e exibe o resultado dentro do parágrafo com id "dataHora".
+        function mostrarDataHora() {
+            var agora = new Date();
+            document.getElementById("dataHora").innerText = agora.toLocaleString()
+            
+        }
+    </script>
+</body>
+</html>

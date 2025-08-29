@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+</head>
+<body>
+    <p id="paragrafo1">Primeiro paragrafo</p>
+    <p id="paragrafo2">Segundo paragrafo</p>
+    <p id="paragrafo3">Terceiro Pargarfo</p>
+    <button onclick="mostrarConteudo()">Mostrar contéudo no console</button>
+
+
+    <script>
+
+        //Foram criads três paragrafos com id's diferentes e um botão que servirá pra chamar a função
+        // No java script, três variaveis foram criadas para pegar cada id e três consoles para mostrar o texto do paragrafo//
+        function mostrarConteudo() {
+            var p1 = document.getElementById("paragrafo1").innerText
+            var p2 = document.getElementById("paragrafo2").innerText
+            var p3 = document.getElementById("paragrafo3").innerText
+
+            console.log(p1)
+            console.log(p2)
+            console.log(p3)
+            
+        }
+    </script>
+</body>
+</html>
