@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 52</title>
+</head>
+<body>
+    
+    <style>
+        body{
+            padding: 20px;
+        }
+
+        img{
+            width: 250px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <img id="carrosel" src="https://upload.wikimedia.org/wikipedia/en/b/b7/Dead_by_Daylight_Steam_header.jpg" alt="Dead By DayLight">
+    <button onclick="proximaImagem()">Trocar Imagem</button>
+
+    <script>
+        var imagens = [
+            "https://upload.wikimedia.org/wikipedia/en/b/b7/Dead_by_Daylight_Steam_header.jpg",
+            "https://img.nsctotal.com.br/wp-content/uploads/2023/10/calopsitaportal.jpg",
+            "https://www.adrenaline.com.br/wp-content/uploads/2025/02/dead-by-daylight-modo-2v8.jpg"
+        ];
+
+        var indice = 0;
+
+        function proximaImagem() {
+            indice = (indice + 1) % imagens.length;
+
+            document.getElementById("carrosel").src = imagens[indice];
+
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 48</title>
+</head>
+<body>
+   <style>
+    body{
+        padding: 10px;
+    }
+    ul{
+        margin-top: 10px;
+    }
+
+    li{
+        margin-bottom: 4px;
+    }
+   </style> 
+
+   <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa">
+   <button onclick="adicionarTarefa()">Adicionar</button>
+   <ul id="listaTarefas"></ul>
+
+   <script>
+    function adicionarTarefa() {
+        var texto = document.getElementById('novaTarefa').value;
+        if (texto.trim() !== ""){
+            var li = document.createElement('li');
+            li.textContent = texto;
+            document.getElementById('listaTarefas').appendChild(li);
+            document.getElementById('novaTarefa').value = "";
+        }
+        
+    }
+   </script>
+</body>
+</html>

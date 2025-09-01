@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 50</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: 10px;
+        }
+
+        #resultado{
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+    <button onclick="gerarNumero()">Gere um número</button>
+    <p id="resultado"></p>
+
+    <script>
+        function gerarNumero() {
+            var numero = Math.floor(Math.random() *100 ) +1;
+            document.getElementById('resultado').textContent = numero
+            
+        }
+    </script>
+</body>
+</html>

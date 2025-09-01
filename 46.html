@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 46</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: 20px;
+        }
+        
+        #resultado {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        
+    </style>
+
+    <input type="text" id="caixaTexto" placeholder="Digite algo...">
+    <button onclick="mostrarTexto()">Mostrar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarTexto() {
+            var texto = document.getElementById('caixaTexto').value;
+            document.getElementById('resultado').textContent = texto
+            
+        }
+    </script>
+</body>
+</html>

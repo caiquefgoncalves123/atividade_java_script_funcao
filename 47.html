@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 47</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: 20px;
+        }
+
+        img{
+            width: 200px;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+
+    <img id="imagem" src="https://avesornamentaisjej.cdn.magazord.com.br/img/2024/03/produto/792/152-calopsita-ancestral-4.png?ims=600x600" alt="Imagem Calopstia">
+    <button onclick="trocarImagem()">Trocar Imagem</button>
+
+    <script>
+        var imagemAtual = 1
+
+        function trocarImagem() {
+            var img = document.getElementById('imagem')
+            if (imagemAtual === 1){
+                img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNgpJxib00xFvS7nzx7MUksgpPKcw0fhEcnA&s";
+                imagemAtual = 2;
+            } else {
+                img.src = "https://avesornamentaisjej.cdn.magazord.com.br/img/2024/03/produto/792/152-calopsita-ancestral-4.png?ims=600x600";
+                imagemAtual = 1;
+            }
+            
+        }
+    </script>
+</body>
+</html>
