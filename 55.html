@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 55</title>
+</head>
+<body>
+    <style>
+        #minhaDiv{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+
+        button{
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <button onclick="mudarBordaAzul()">Mudar Borda para azul</button>
+    <div id="minhaDiv"></div>
+
+    <script>
+        function mudarBordaAzul() {
+            document.getElementById("minhaDiv").style.borderColor = "blue";
+            
+        }
+    </script>
+</body>
+</html>

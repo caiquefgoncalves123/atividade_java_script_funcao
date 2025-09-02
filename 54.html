@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 54</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 40px;
+        }
+
+        input, button{
+            font-size: 1.1em;
+            margin: 5px;
+        }
+
+        #resultado{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+
+    <input type="number" id="numero" placeholder="Digite um número...">
+    <button onclick="calcularDobro()">Mostrar Resultado</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularDobro() {
+            var numero = document.getElementById("numero").value;
+            var resultado = numero * 2;
+
+            document.getElementById("resultado").textContent = "O dobro é: " + resultado;
+            
+        }
+    </script>
+</body>
+</html>
