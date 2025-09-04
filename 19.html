@@ -8,6 +8,10 @@
 </head>
 <body>
 
+
+    <!--Foi criado uma div com um id, e um botão vai executar o código JavaScript que gera uma cor aleatória em formato hexadecimal
+     isso foi feito utilizando Math.random() para criar um número aleatório e conventendo para hexadecimal com toString(16) e
+     então definindo a propriedade backgroundColor da div-->
     <div id="minhaDiv"></div>
     <button onclick="document.getElementById('minhaDiv').style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16)">Mudar Cor</button>
 

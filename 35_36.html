@@ -6,6 +6,10 @@
     <title>Atividade 35 e 36</title>
 </head>
 <body>
+
+    <!--Dentro do paragrafo temos um span que vai ser o valor do nosso contador e outros botões para aumentar e diminuir o contador,
+    no JavaSript, a variavel contador guarda o valor atual do contador, e então a funcção aumentarContador incrementa o valor do contador em 1 e atualiza o texto do span
+    já o diminurContador decrementa o valor de contador em 1 e também atualiza o texto do span-->
     <p>Contador: <span id="contador">0</span></p>
 
     <button onclick="aumentarContador()">Aumentar</button>
@@ -22,7 +26,7 @@
 
         function diminuirContador() {
       contador--;
-      document.getElementById('contador').textContent = contador;
+      document.getElementById('contador').innerText = contador;
     }
     </script>
 </body>

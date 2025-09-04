@@ -19,6 +19,10 @@
     }
    </style> 
 
+   <!--O input permite ao usuário diigtar o texto de uma nova tarefa, o botão chama a função adicionarTarefa quando clicado e as tarefas são exibidas em uma lista.
+   A função adicionarTarefa pega o valor digitado no campo de texto, se o texto não estiver vazio(após remover os espaços com trim()) cria um novo item de lista e define
+   o texto do item como valor digitado, adiciona o item a lista de tarefas usando appendChild e por último limpa o campo de texto para que o usuario possa digitar outra tarefa-->
+
    <input type="text" id="novaTarefa" placeholder="Digite uma nova tarefa">
    <button onclick="adicionarTarefa()">Adicionar</button>
    <ul id="listaTarefas"></ul>

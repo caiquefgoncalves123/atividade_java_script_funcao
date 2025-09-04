@@ -6,6 +6,9 @@
     <title>Atividade 13</title>
 </head>
 <body>
+
+    <!--Nesse código realiza quase a mesma coisa na última atividade, no entanto tem uns detalhes a mais, temos o botão de remover o último item da lista, que quando clicado,
+    uma função no JvaScript verifica se existe algum item na lista. Se existir, ele remove o último item adicionado usando removeChild(lista.lastChild) -->
     
     <button id="adicionar">Adicionar Item</button>
     <button id="remover">Remover Último Item</button>
@@ -17,6 +20,8 @@
         var botao = document.getElementById('adicionar');
         var botaoRemover = document.getElementById('remover');
         var lista = document.getElementById('lista');
+
+        var contador = 1;
 
         
 

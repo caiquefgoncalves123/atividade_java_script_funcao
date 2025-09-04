@@ -10,6 +10,10 @@
     <div id="minhaDiv" onmouseover="mudarCor(true)" onmouseout="mudarCor(false)">Passe o mouse</div>
 
 
+    <!--Uma div foi criada com um texto, quando o usuario passa o mouse sobre a div, o evento onmouseover chama a função mudarCor(true), que muda
+    a cor de fundo da div para verde. Quando sai da div, o evento onmouseout chama a função mudarCor(), mudando a cor de fundo para azul. No JavaScript, a função mudarCor recebe
+    um parametro ativo e altera a cor da div conforme esse valor-->
+
     <script>
         function mudarCor(ativo) {
             var div = document.getElementById('minhaDiv')

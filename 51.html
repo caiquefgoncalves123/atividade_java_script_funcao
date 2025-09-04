@@ -8,6 +8,11 @@
   </style>
 </head>
 <body>
+
+  <!--O botão serve para chamar a função trocarTitulo(), a variavel titulooriginal começa como true, indicando que ainda é o original.
+  A função trocarTitulo verifica o valor do tituloOriginal, se for true, muda o titulo da pagina para "Novo Título" usando document.title e define titulooriginal como false.
+  Se for false, retorna o titulo para Titulo Original e define tituloOriginal como true-->
+  <h1>Titulo Original</h1>
   <button onclick="trocarTitulo()">Trocar Título</button>
 
   <script>

@@ -6,6 +6,10 @@
     <title>Atividade 28</title>
 </head>
 <body>
+
+
+    <!--É exibido ao usuário um botão, quando o botão é clicado, ele executa uma função JavaScript que tenta desabilitar o botão, e mostra
+    um alert dizendo que ele não pode clicar mais -->
     
     <button id="botao">Clique Aqui</button>
 
@@ -13,7 +17,7 @@
         var botao = document.getElementById('botao')
         botao.onclick = function () {
 
-            botao.disable = true;
+            botao.disabled = true;
             alert("Você não pode clicar mais")
             
         }

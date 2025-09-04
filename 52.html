@@ -20,6 +20,10 @@
         }
     </style>
 
+    <!--A imagem começa mostrando a primeira imagem do array e o botão serve para chamar a função proximaImagem().No JavaScript, o array guarda os endereços das imagem que serão exibidos no carrossel, depois a variavel
+    indice controla qual imagem está sendo exibida (começa com 0) e a função incrementa o indice usando (indice + 1) % imagens.lenght para garantir que ao chegar ao final do array volte a primeira imagem, depois atualiza o src
+    da imagem para mostrar a proxima imagem do array-->
+
     <img id="carrosel" src="https://upload.wikimedia.org/wikipedia/en/b/b7/Dead_by_Daylight_Steam_header.jpg" alt="Dead By DayLight">
     <button onclick="proximaImagem()">Trocar Imagem</button>
 
